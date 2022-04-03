@@ -1,0 +1,73 @@
+@charset "UTF-8";
+  @media screen and (max-width: 834px) {
+    /* ページトップボタン */
+    #top-btn{
+      right: 10px;
+      bottom: 10px;
+    }
+    
+    /* ＜トップページ＞ */
+    .imgs.flex {
+      flex-direction: column;
+    }
+
+    .imgs img {
+      width: 100%;
+    }
+
+     /* ＜レシピ一覧ページ＞ */
+    .top-imgs.flex {
+      flex-direction: column;
+      margin: 30px 0;
+    }
+
+    .top-imgs a {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 10px;
+    }
+
+    .recipes-contents {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .left-img  {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .right-imgs {
+      width    : 100%;
+    }
+
+    .right-imgs a {
+      width     : 48%;
+    }
+
+    .recipes-contents.flex2 {
+      flex-direction: column-reverse;
+    }
+
+    /* ＜レシピ詳細ページ＞ */
+    .single-recipe-container.flex{
+      flex-direction: column;
+    }
+
+    .recipe-img {
+      width: 100%;
+    }
+
+    .recipe-detail {
+      width: 100%;
+    }
+
+    .recipe-detail h2 {
+      font-size: 3rem;
+    }
+
+    .ingredients,
+    .how-to li {
+      font-size: 1.2rem;
+    }
+  }

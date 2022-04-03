@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+/* ======================================================
+  全体
+========================================================*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif, sans-serif;
+  color      : #383e45;
+  font-size  : 1.4rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor         : pointer;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  width : 100%;
+  height: 100%;
+}
+
+/* 共通＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+main,
+footer {
+  text-align: center;
+}
+
+.page-h1 {
+  margin-bottom: 80px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin   : 100px auto;
+  padding  : 0 3%;
+}
+
+.flex {
+  display: flex;
+}
+
+/* ページトップボタン */
+main {
+  position: relative;
+}
+
+#top-btn {
+  display         : inline-block;
+  width           : 50px;
+  height          : 50px;
+  background-color: #000;
+  position        : fixed;
+  right           : 30px;
+  bottom          : 30px;
+  border-radius   : 50%;
+}
+
+#top-btn::before {
+  content     : "";
+  width       : 15px;
+  height      : 15px;
+  border-top  : 3px solid #fff;
+  border-right: 3px solid #fff;
+  position    : absolute;
+  top         : 40%;
+  right       : 35%;
+  transform   : rotate(-45deg);
+}
+
+/* 「一覧を見る」ボタン */
+.link {
+  display: inline-block;
+  margin : 60px auto;
+  border : 1px solid #000;
+  padding: 1% 3%;
+}
+
+/* header=================================================== */
+.header-img {
+  width     : 100vw;
+  height    : 600px;
+  object-fit: cover;
+}
+
+/* main===================================================== */
+/* ＝＝＝＝＝＝＝＜トップページ＞ ＝＝＝＝＝＝＝＝*/
+/* サイトの説明 */
+.desc {
+  margin: 80px auto;
+}
+
+/* 画像 */
+.imgs {
+  width          : 100%;
+  justify-content: center;
+}
+
+.imgs img {
+  width : calc(100%/3);
+  height    : 500px;
+  object-fit: cover;
+}
+
+/* ＝＝＝＝＝＝＝＜レシピ一覧ページ＞＝＝＝＝＝＝*/
+.top-imgs a {
+  width: calc(100%/3);
+  height: 470px;
+  margin-bottom: 80px;
+}
+
+.recipes-contents {
+  width          : 100%;
+  height         : 250px;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+
+.left-img a {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-imgs {
+  width    : 60%;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-imgs a {
+  width     : calc(100%/3.3);
+  height    : 120px;
+  object-fit: cover;
+  margin: 0 0.5%;
+}
+/* ＝＝＝＝＝＝＝＜レシピ詳細ページ＞＝＝＝＝＝＝*/
+  .recipe-img {
+    width: 40%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .recipe-detail {
+    width: 60%;
+    padding:0 2%;
+    text-align: left;
+  }
+
+  .single-recipe-container h3 {
+    border-bottom: 1px solid #000;
+  }
+
+  .ingeredients-continer {
+    padding: 3% 0;
+  }
+
+  .ingredients {
+    padding: 1%;
+  }
+
+  .ingredients dt {
+    font-weight: lighter;
+  }
+
+  .ingredients,
+  .how-to li {
+    border-bottom: 1px solid #CCCCCC;
+    border-style: dotted;
+    justify-content: space-between;
+  }
+
+  .how-to li{
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding: 1%;
+  }
+
+
+/* footer==================================================== */
+.sns {
+  justify-content: center;
+}
+
+.sns li {
+  padding: 2%;
+}
+
+.sns a {
+  border-bottom: 1px solid #000;
+}
+
+#copyright {
+  margin: 2%;
+}

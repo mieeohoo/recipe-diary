@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Diary</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sp.css">
+</head>
+
+<!-- ＝＝＝＝＝＝＝＜レシピ詳細ページ＞ ＝＝＝＝＝＝＝＝＝-->
+
+<body class="wrapper">
+  <!-- header======================================== -->
+  <header>
+    <h1 class="page-h1">
+      <a href="index.html">
+        Recipe Diary
+      </a>
+    </h1>
+  </header>
+  <!-- main========================================== -->
+  <main>
+    <div class="single-recipe-container flex">
+      <!-- 左：画像 -->
+      <img class="recipe-img" src="images/recipe1.jpg" alt="">
+      <!-- 右：レシピ -->
+      <div class="recipe-detail">
+        <h2>アボカドのリゾット</h2>
+        <br>
+        <p>
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+        <br>
+        <!-- 材料 -->
+        <h3>材料（2人分）</h3>
+        <dl class="ingeredients-continer">
+          <div class="ingredients flex">
+            <dt>テキストテキスト</dt>
+            <dd>1個</dd>
+          </div>
+          <div class="ingredients flex">
+            <dt>テキストテキスト</dt>
+            <dd>1個</dd>
+          </div>
+          <div class="ingredients flex">
+            <dt>テキストテキスト</dt>
+            <dd>1個</dd>
+          </div>
+          <div class="ingredients flex">
+            <dt>テキストテキスト</dt>
+            <dd>1個</dd>
+          </div>
+          <div class="ingredients flex">
+            <dt>テキストテキスト</dt>
+            <dd>1個</dd>
+          </div>
+        </dl>
+        <br>
+        <!-- 作り方 -->
+        <h3>作り方</h3>
+        <ol class="how-to">
+          <li>テキストテキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキストテキスト</li>
+          <li>テキストテキストテキストテキストテキスト</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 「戻る」ボタン -->
+    <a href="page-recipes.html" class="link">
+      <span>レシピ一覧に戻る</span>
+    </a>
+    <!-- ページトップボタン -->
+    <a href="" id="top-btn"></a>
+  </main>
+  <!-- footer======================================== -->
+  <footer>
+    <!-- SNSリンク -->
+    <ul class="sns flex">
+      <li><a href="">Instagram</a></li>
+      <li><a href="">Twitter</a></li>
+      <li><a href="">Facebook</a></li>
+    </ul>
+    <!-- コピーライト -->
+    <p id="copyright">&copy; 2022 Recipe Diary</p>
+  </footer>
+  <script src="jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
